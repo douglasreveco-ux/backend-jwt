@@ -55,7 +55,7 @@ function verifyToken(req, res, next) {
   }
 }
 
-// RUTA PRIVADA
+// Ruta protegida y logout
 app.get("/privado", verifyToken, (req, res) => {
   res.json({
     message: "Acceso permitido",
