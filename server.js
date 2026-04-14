@@ -16,7 +16,7 @@ const users = [
   { username: "user", password: "abcd" }
 ];
 
-// Login con JWT
+// Rama login
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
