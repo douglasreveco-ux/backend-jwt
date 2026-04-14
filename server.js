@@ -1,3 +1,4 @@
+// Login con JWT
 import express from "express";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
@@ -73,6 +74,7 @@ app.post("/logout", (req, res) => {
 app.get("/", (req, res) => {
   res.send("Servidor funcionando");
 });
+
 
 // INICIAR SERVIDOR
 app.listen(PORT, () => {
