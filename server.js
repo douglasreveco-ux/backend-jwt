@@ -41,7 +41,7 @@ app.post("/login", (req, res) => {
   res.json({ message: "Login exitoso" });
 });
 
-// MIDDLEWARE
+// Middleware de autenticación
 function verifyToken(req, res, next) {
   const token = req.cookies.token;
 
