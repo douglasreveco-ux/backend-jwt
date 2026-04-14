@@ -1,4 +1,3 @@
-// Login con JWT
 import express from "express";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
@@ -17,7 +16,7 @@ const users = [
   { username: "user", password: "abcd" }
 ];
 
-// LOGIN
+// Login con JWT
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
